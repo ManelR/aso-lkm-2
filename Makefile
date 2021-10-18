@@ -12,8 +12,8 @@ all:
 	$(MAKE) -C $(BUILDSYSTEM_DIR) M=$(PWD) modules
 clean:
 	$(MAKE) -C $(BUILDSYSTEM_DIR) M=$(PWD) clean
-load:
+install:
 	insmod ./$(TARGET_MODULE).ko
-unload:
+uninstall:
 	rmmod ./$(TARGET_MODULE).ko
 endif
