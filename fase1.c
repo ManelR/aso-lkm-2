@@ -3,6 +3,8 @@
 #include <linux/fs.h>
 #include <linux/uaccess.h>
 
+MODULE_LICENSE("");
+
 static int device_file_major_number = 0;
 static const char device_name[] = "ASO";
 
